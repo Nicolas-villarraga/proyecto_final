@@ -17,8 +17,8 @@
                 <tr>
                     <td>{{$historiaclinica->id}}</td>
                     <td>{{$historiaclinica->name}}</td>
-                    <td>{{$historiaclinica->histroriacompleta}}</td>
-                    <td>{{$historiaclinica->description}}</td>
+                    <td>{{$historiaclinica->historiacompleta}}</td>
+                    <td>{{$historiaclinica->descripcion}}</td>
                     <td>
                         <a href="" class="btn btn-info">editar</a>
                         <button class="btn btn-danger">eliminar</button>
