@@ -1,18 +1,15 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CalidadController;
 use App\Http\Controllers\CitasController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EspecialistaController;
-use App\Http\Controllers\HistorialController;
+use App\Http\Controllers\HistoriaclinicaController;
 use App\Http\Controllers\IndexControllers;
-use App\Http\Controllers\InventarioController;
 use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProveedorController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\VcitasController;
-use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -64,7 +61,7 @@ Route::get('citas/edit/{id}',[CitasController::class,'edit']);
 Route::put('citas/{id}',[CitasController::class,'update']);
 Route::delete('citas/{id}',[CitasController::class,'destroy']);
 
-/*inventario */
-
+/*historial clinico*/
+Route::get('historiaclinica',[HistoriaclinicaController::class,'index']);
 
 
